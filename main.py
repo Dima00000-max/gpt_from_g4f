@@ -10,7 +10,6 @@ def askgpt(prompt: str):
     try:
         response = g4f.ChatCompletion.create(
             model="gpt-3.5-turbo",
-            provider=g4f.Provider.OpenaiChat,
             messages=[
                 {"role": "user", "content": prompt}
             ]
